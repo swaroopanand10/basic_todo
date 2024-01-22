@@ -1,4 +1,5 @@
 import { createItem } from "./createItem.js"
+// import { divSessionStoragelistener, divSessionStoragerestore } from "./sessionStorage.js"
 const add_button = document.querySelector(".add")
 add_button.addEventListener("click", addItem)
 
@@ -7,8 +8,10 @@ function addItem() {
   const item = createItem()
   if (item) {
     item_container.appendChild(item)
-  }else{
+  } else {
     console.log("no value provided in input box")
   }
 }
 
+// divSessionStoragelistener()
+// divSessionStoragerestore()
